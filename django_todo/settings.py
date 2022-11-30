@@ -25,14 +25,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 if os.path.isfile('env.py'):
-    import env
+    import env  # noqa
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
+os.environ.get('DATABASE_URL')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['monipar-django-todo-app.herokuapp.com/']
+ALLOWED_HOSTS = ['monipar-django-todo-app.herokuapp.com']
 
 
 # Application definition
