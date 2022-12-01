@@ -33,7 +33,7 @@ os.environ.get('DATABASE_URL')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['monipar-django-todo-app.herokuapp.com']
+ALLOWED_HOSTS = ['HEROKU_HOSTNAME']
 
 
 # Application definition
